@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --mainColor:rgb(2, 26, 84);
+    --secondColor:rgb(255, 133, 187);
+    --hoverColor:rgb(255, 206, 227);
+    --whiteColor:white;
+}
+/* nav */
+nav{
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16% !important;
+}
+nav h1{
+    color: var(--secondColor);
+
+}
+nav ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--whiteColor) !important;
+    font-size: 25px;
+
+}
+@media screen  and (max-width:991px){
+nav ul{
+    width: 100%;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+
+}
+@media screen and (min-width:992px) and (max-width:1629px){
+    nav{
+    padding: 20px 8% !important;
+}
+nav ul{
+    width: 80%;
+}
+nav ul li a{
+    font-size: 23px;
+
+}
+}
+/* header */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .text h4{
+    margin-bottom: 5%;
+    color: var(--whiteColor);
+
+}
+.header .text p{
+    margin-bottom: 5%;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--secondColor);
+
+}
+.header .text #cv{
+    margin-top: 5%;
+    text-decoration: none;
+    background-color: var(--secondColor);
+    color: var(--mainColor);
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    transition: all 2s;
+    
+}
+.header .text #cv:hover{
+    scale: 1.2;
+    background-color: var(--whiteColor);
+    color: var(--mainColor);
+}
+.header .text .icons{
+    margin-top: 8%;
+}
+.header .text .icons a i{
+    font-size: 40px;
+    color: var(--whiteColor);
+    transition: all 2s;
+}
+.header .text .icons a i:hover{
+    color: var(--secondColor);
+    scale: 1.1;
+}
+
+.header .imgg{
+    width: 300px;
+    height: 400px;
+    box-shadow: 4px 4px 4px 4px var(--hoverColor) , -4px -4px 4px 4px var(--hoverColor);
+    border-radius: 20px;
+    transition: all 2s;
+
+}
+.header .imgg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+.header .imgg:hover{
+    scale: 1.2;
+}
+@media screen and (max-width:924px) {
+    .header{
+    height: fit-content;
+    padding-top: 30%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.header .text{
+    text-align: center;
+}
+.header .imgg{
+        margin-top: 10%;
+
+}
+}
+@media screen and (max-width:530px) {
+
+
+.header .text p{
+    font-size: 25px;
+
+}
+.header .text #cv{
+    padding: 10px 15px;
+    font-size: 20px;
+    
+}
+.header .imgg{
+    width: 200px;
+    height: 300px;
+}
+}
+
+/* about */
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8% 0;
+    height: 80vh;
+
+}
+.about-me h1{
+    color: var(--mainColor);
+    font-size: 70px;
+    transition: 0.7s ease;
+
+}
+.about-me h1:hover
+{
+    color: var(--secondColor);
+    transform: scale(1.1);
+
+}
+.about-me .text{
+    background-color:var(--hoverColor);
+    color: var(--mainColor);
+    width: 70%;
+    padding: 40px 100px;
+    font-size: x-large;
+    border-radius: 40px 0px;
+    line-height: 50px;
+    text-transform: capitalize;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+/* skills */
+.skills{
+    background-color: var(--mainColor);
+    padding:6% 4% ;
+    font-size:70px;
+}
+.skills #skills-head{
+    text-align: center;
+    color: var(--secondColor);
+    font-size:1em ;
+    margin-bottom: 4%;
+}
+.skills .skill{
+    width: 100%;
+}
+.skills .skill p{
+    font-size: 40px;
+    color: var(--whiteColor);
+}
+.skills .skill .bg{
+    background-color: black;
+    width:80% ;
+    border-radius: 20px;
+}
+.skills .skill .fg1{
+    background-color: rgb(229, 171, 11);
+    width: 95%;
+    border-radius: 20px;
+}
+.skills .skill .fg2{
+    background-color: rgb(11, 185, 205);
+    width: 90%;
+    border-radius: 20px;
+}.skills .skill .fg3{
+    background-color: rgb(238, 18, 128);
+    width: 40%;
+    border-radius: 20px;
+}.skills .skill .fg4{
+    background-color: rgb(167, 143, 230);
+    width: 20%;
+    border-radius: 20px;
+}
+.skills .skill .bg p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--whiteColor);
+}
+
+/* projects */
+.projects-contianter{
+    padding: 6%;
+}
+.projects-contianter h2{
+    text-align: center;
+    font-size: 70px;
+    color: var(--mainColor);
+    margin-bottom: 5%;
+}
+.projects-contianter .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+
+}
+.projects-contianter .projects .project{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px 50px;
+    background-color: var(--secondColor);
+    /* margin-bottom: 30px; */
+}
+.projects-contianter .projects .project img{
+    width: 100%;
+    /* height: 60%; */
+    border-radius: 20px 50px 0 0;
+
+}
+.projects-contianter .projects .project .text {
+    padding: 20px;
+
+
+}
+
+.projects-contianter .projects .project .text p{
+    margin: 20px 0;
+}
+.projects-contianter .projects .project .text a{
+    text-decoration: none;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    padding: 15px 20px ;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 20px;
+    display:inline-block;
+    margin-top: 20px;
+}
+
+
+@media screen  and (max-width:520px){
+    .projects-contianter h2{
+    font-size: 40px;
+    margin-bottom: 10%;
+}
+
+.projects-contianter .projects .project{
+    width: 300px;
+    height: fit-content;
+}
+
+.projects-contianter .projects .project .text a{
+    padding: 10px 15px ;
+    font-size: 18px;
+    margin-top: 15px;
+}
+/* الحاوية الكبيرة */
+.contact-container {
+    background-color: #f3a66b; 
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(243, 166, 107, 0.5); 
+}
+}
+
+/* contact */
+.contact{
+    background-color: var(--mainColor);
+    padding: 8% 0;
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 70px;
+    color: var(--secondColor);
+    margin-bottom: 4%;
+}
+
+.contact-form{
+    background-color: var(--hoverColor);
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 30px 0;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contact-form button{
+    width: 100%;
+    padding: 12px;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: var(--mainColor);
+    color: var(--secondColor);
+    text-align: center;
+    padding: 20px;
+}
+/* --- تصليحات عامة للموبايل والتابلت --- */
+@media screen and (max-width: 1024px) {
+    /* تصغير العناوين عشان متدخلش في بعضها */
+    .about-me h1, .skills #skills-head, .projects-contianter h2, .contact h1 {
+        font-size: 40px !important;
+        margin-bottom: 30px !important;
+    }
+
+
+    .about-me .text {
+        width: 85% !important; 
+        padding: 30px !important;       
+        font-size: 18px !important;
+        line-height: 1.6 !important;
+        height: auto !important;
+        margin: auto;
+    }
+
+    .about-me {
+        height: auto !important;  
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* للموبايلات الصغيرة */
+    .about-me h1, .skills #skills-head, .projects-contianter h2, .contact h1 {
+        font-size: 30px !important;
+    }
+
+    .about-me .text {
+        width: 95% !important;
+        padding: 20px !important;
+        font-size: 16px !important;
+    }
+
+
+    .skills .skill p {
+        font-size: 18px !important;
+    }
+}
+
+body {
+    padding-top: 70px;  
+}
+@media screen and (max-width: 768px) {
+    .contact {
+        height: auto !important; 
+        min-height: 100vh;      
+        padding: 80px 20px !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact h1, .contact h2 {
+        font-size: 32px !important;
+        margin-bottom: 40px !important; 
+        text-align: center;
+    }
+    .contact-form {
+        width: 100% !important;
+        max-width: 380px; 
+        margin: 0 auto !important;
+        padding: 25px !important;
+    }
+}
+.projects-contianter .projects .project img{
+    width: 100%;
+    height: 200px;     
+    object-fit: cover;  
+    display: block;
+}
